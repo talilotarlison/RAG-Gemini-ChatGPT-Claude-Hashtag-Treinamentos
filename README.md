@@ -61,3 +61,203 @@ RAG-Gemini-ChatGPT-Claude-Hashtag-Treinamentos/
 │   └── ...
 │
 └── README.md
+````
+
+---
+
+## 🤖 Modelos Utilizados
+
+### 🔹 Google Gemini
+
+Implementação utilizando a API do Google Gemini.
+
+### 🔹 OpenAI ChatGPT
+
+Implementação utilizando modelos GPT da OpenAI.
+
+### 🔹 Anthropic Claude
+
+Implementação utilizando a API da Anthropic.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* Python 3.10+
+* Streamlit
+* LangChain
+* FAISS ou ChromaDB
+* PyPDF2 ou pypdf
+* Embeddings
+* APIs:
+
+  * Google Gemini
+  * OpenAI
+  * Anthropic
+
+---
+
+## 📄 Funcionalidades
+
+* Upload de arquivos PDF
+* Extração de texto
+* Segmentação em chunks
+* Geração de embeddings
+* Armazenamento vetorial
+* Busca semântica
+* Respostas com base no documento
+* Interface web com Streamlit
+* Suporte a múltiplos provedores de IA
+
+---
+
+## 🚀 Instalação
+
+### 1. Clone o repositório
+
+```bash
+git clone <url-do-repositorio>
+cd RAG-Gemini-ChatGPT-Claude-Hashtag-Treinamentos
+```
+
+### 2. Escolha um dos projetos
+
+```bash
+cd ChatGPT
+# ou
+cd Gemini
+# ou
+cd Claude
+```
+
+### 3. Crie um ambiente virtual
+
+```bash
+python -m venv .venv
+```
+
+### 4. Ative o ambiente virtual
+
+#### Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+#### Linux/Mac
+
+```bash
+source .venv/bin/activate
+```
+
+### 5. Instale as dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Configuração das Chaves de API
+
+Crie um arquivo `.env` com a chave correspondente ao modelo escolhido.
+
+### OpenAI
+
+```env
+OPENAI_API_KEY=sua_chave_aqui
+```
+
+### Google Gemini
+
+```env
+GOOGLE_API_KEY=sua_chave_aqui
+```
+
+### Anthropic Claude
+
+```env
+ANTHROPIC_API_KEY=sua_chave_aqui
+```
+
+---
+
+## ▶️ Execução
+
+```bash
+streamlit run app.py
+```
+
+A aplicação será aberta automaticamente no navegador.
+
+---
+
+## 🧑‍💼 Caso de Uso: Assistente de RH
+
+O sistema foi desenvolvido como um assistente virtual para Recursos Humanos.
+
+### Exemplos de perguntas:
+
+* "Quantos dias de férias o colaborador tem direito?"
+* "Qual é a política de home office?"
+* "Como funciona o banco de horas?"
+* "Quais benefícios são oferecidos pela empresa?"
+* "Qual o prazo para solicitar reembolso?"
+
+O sistema consulta o PDF da empresa e responde com base nas informações encontradas.
+
+---
+
+## 📘 Fluxo do Sistema
+
+```text
+PDF → Extração de Texto → Chunks → Embeddings → Banco Vetorial
+     → Busca Semântica → Contexto → LLM → Resposta
+```
+
+---
+
+## 📸 Interface
+
+A aplicação em Streamlit permite:
+
+* Upload do PDF
+* Campo para digitar perguntas
+* Visualização das respostas em tempo real
+
+---
+
+## 🔍 Exemplo de Uso
+
+1. Execute a aplicação.
+2. Faça upload do manual ou política em PDF.
+3. Digite uma pergunta.
+4. Receba uma resposta fundamentada no documento.
+
+---
+
+## 📈 Melhorias Futuras
+
+* Upload de múltiplos documentos
+* Histórico de conversas
+* Citação das páginas do PDF
+* Exportação das respostas
+* Controle de acesso
+* Deploy em nuvem
+
+---
+
+## 🎓 Créditos
+
+Projeto desenvolvido com base no curso da Hashtag Treinamentos.
+
+[Hashtag Treinamentos](https://www.hashtagtreinamentos.com?utm_source=chatgpt.com)
+
+---
+
+## 📄 Licença
+
+Este projeto é destinado a fins educacionais e de aprendizado.
+
+```
+
